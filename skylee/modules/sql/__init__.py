@@ -2,8 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
-from skylee import DB_URI
-
+DB_URI = "postgres://ycufvxvd:2yW_DOavGEkoLUoKFNXez6yoYbixDgQZ@suleiman.db.elephantsql.com:5432/ycufvxvd"
 
 def start() -> scoped_session:
     engine = create_engine(DB_URI, client_encoding="utf8")
