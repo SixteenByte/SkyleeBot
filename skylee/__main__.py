@@ -42,23 +42,23 @@ Add me in your group just click the button below!
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add Me To Group ➕", url="t.me/meikobot?startgroup=true"
+            text="🤖Add Me To Group🤖", url="t.me/MissJuliaBot?startgroup=true"
         ),
-        InlineKeyboardButton(text="Updates & Info 📃", url="https://t.me/meikosupport"),
+        InlineKeyboardButton(text="🌍Updates & Info 🌍", url="https://t.me/JuliaUpdates"),
     ]
 ]
 
-buttons += [[InlineKeyboardButton(text="Help & Commands ❔", callback_data="help_back")]]
+buttons += [[InlineKeyboardButton(text="❓Help & Commands ❓", callback_data="help_back")]]
 
 
 HELP_STRINGS = f"""
 Hello there! My name is *{dispatcher.bot.first_name}*.
 
 *Main* commands available:
- ✗ `/start` : Starts me, can be used to check i'm alive or no...
- ✗ `/help` : PM's you this message.
- ✗ `/help <module name>` : PM's you info about that module.
- ✗ `/settings` : in PM: will send you your settings for all supported modules.
+  /start: Starts me, can be used to check i'm alive or no...
+  /help : PM's you this message.
+  /help <module name>` : PM's you info about that module.
+  /settings` : in PM: will send you your settings for all supported modules.
    ~ in a group: will redirect you to pm, with all that chat's settings.
  \nClick on the buttons below to get documentation about specific modules!"""
 
