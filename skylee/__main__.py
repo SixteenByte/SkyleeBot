@@ -33,16 +33,10 @@ from skylee.modules.helper_funcs.alternate import typing_action
 
 PM_START_TEXT = f"""
 Hey There ! My name is 𝙈𝙚𝙞𝙠𝙤 
-I'm here to make your group management fun and easy!
-I have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters.
-Please Click Help Button For Assistance And Help Regarding Special Modules
-You can find the list of available commands with Help Module.
-Any issues or need help related to me?
-==========================
-✗ [Support Channel](t.me/Meikosupport)
-✗ [Support Group](t.me/meikoSupportChat)
-==========================
-Wanna Add me to your Group? Just click the button below!
+'m a powerful group management bot 🤖
+👉Add me to your groups as admin to manage your groups with my commands🤩
+You can find my list of available commands with /help .
+Add me in your group just click the button below!
 """
 
 buttons = [
@@ -59,8 +53,6 @@ buttons += [[InlineKeyboardButton(text="Help & Commands ❔", callback_data="hel
 
 HELP_STRINGS = f"""
 Hello there! My name is *{dispatcher.bot.first_name}*.
-I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-the things I can help you with.
 
 *Main* commands available:
  ✗ `/start` : Starts me, can be used to check i'm alive or no...
@@ -168,7 +160,7 @@ def start(update, context):
 
         else:
             update.effective_message.reply_photo(
-                "https://telegra.ph/file/0a6a55b868d5e7d874295.jpg",
+                "https://telegra.ph/file/285b9823cbe63c6826e2a.jpg",
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
